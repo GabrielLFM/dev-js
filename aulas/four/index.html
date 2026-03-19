@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de decisão</title>
+</head>
+<body>
+     <script>
+    let idade = parseInt(prompt("Digite sua idade:"));
+
+    if (idade < 12) {
+      alert("Você é criança.");
+    } else if (idade >= 12 && idade <= 17) {
+      alert("Você é adolescente.");
+    } else if (idade >= 18 && idade <= 59) {
+      alert("Você é adulto.");
+    } else if (idade >= 60) {
+      alert("Você é idoso.");
+    } else {
+      alert("Idade inválida.");
+    }
+
+    let temCarteira = true;
+    if (idade >= 18 && temCarteira) {
+      console.log("Pode dirigir.");
+    } else {
+      console.log("Não pode dirigir.");
+    }
+  </script>
+</body>
+</html>
